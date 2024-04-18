@@ -98,7 +98,8 @@ huggingface:
   trust_remote_code: true
 
 vectorstore:
-  database: qdrant
+  database: chroma
+    #database: qdrant
 
 nodestore:
   database: simple

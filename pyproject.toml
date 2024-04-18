@@ -93,6 +93,21 @@ pytest-cov = "^5"
 ruff = "^0"
 pytest-asyncio = "^0.24.0"
 types-pyyaml = "^6.0.12.20240917"
+[tool.poetry.group.ui]
+optional = true
+[tool.poetry.group.ui.dependencies]
+gradio = "^4.4.1"
+
+[tool.poetry.group.local]
+optional = true
+[tool.poetry.group.local.dependencies]
+numpy = "1.26.0"
+sentence-transformers = "^2.2.2"
+torch = ">=2.0.0, !=2.0.1, !=2.1.0"
+transformers = "^4.34.0"
+
+[tool.poetry.extras]
+chroma = ["chromadb"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
