@@ -83,6 +83,7 @@ vector-stores-postgres = ["llama-index-vector-stores-postgres"]
 vector-stores-milvus = ["llama-index-vector-stores-milvus"]
 storage-nodestore-postgres = ["llama-index-storage-docstore-postgres","llama-index-storage-index-store-postgres","psycopg2-binary","asyncpg"]
 rerank-sentence-transformers = ["torch", "sentence-transformers"]
+chroma = ["chromadb"]
 
 [tool.poetry.group.dev.dependencies]
 black = "^24"
@@ -105,9 +106,6 @@ numpy = "1.26.0"
 sentence-transformers = "^2.2.2"
 torch = ">=2.0.0, !=2.0.1, !=2.1.0"
 transformers = "^4.34.0"
-
-[tool.poetry.extras]
-chroma = ["chromadb"]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
